@@ -103,7 +103,7 @@ But let's look at a simple example::
   <!-- A context variable called form is created with the necessary hidden
   fields, timestamps and security hashes -->
   <table>
-    <form action="{% comment_form_target %}" method="post">
+    <form action="{% url comments-post-comment %}" method="post">
       {% csrf_token %}
       {{ form }}
       <tr>
